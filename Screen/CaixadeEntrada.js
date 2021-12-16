@@ -28,7 +28,7 @@ export default function CaixadeEntrada({navigation}) {
             </View>
             <View style={styles.timeFavorite}>
                 <Text style={styles.time}>{item.time}</Text>
-                    
+                {item.star ? <FontAwesome5 name="star" color='yellow' /> : <FontAwesome5 name="star" color='black' />}
             </View>
         </TouchableOpacity>
     }
@@ -36,7 +36,6 @@ export default function CaixadeEntrada({navigation}) {
         <View style={styles.container}>
             <StatusBar style= 'auto'/>
             <View style={styles.mensagemContainer}>
-                <Text style={styles.localEmail}>Caixa de Entrada</Text>
                 <FlatList
                     data={emails}
                     renderItem={renderItem}
