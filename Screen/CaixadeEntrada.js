@@ -56,12 +56,6 @@ const styles = StyleSheet.create({
         flex: 1,
         marginTop: 20,
     },
-    localEmail: {
-        margin: 20,
-        padding:10,
-        backgroundColor:'#00BFFF',
-        fontWeight: 'bold',
-    },
     mensagem: {
         height: 60,
         flexDirection: 'row',
